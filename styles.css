@@ -1212,6 +1212,12 @@ footer {
 
 /* Orgs - Green */
 
+/* YouTube - Red */
+.metric-card:nth-child(5) .metric-icon {
+    color: #ff0000;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+}
+
 .metric-number {
     font-family: 'Space Mono', monospace;
     font-size: 3rem;
