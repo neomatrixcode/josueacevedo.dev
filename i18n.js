@@ -69,6 +69,7 @@ const translations = {
         research_btn_paper: "READ PAPER",
         research_btn_book: "FIND ONLINE",
         research_btn_article: "READ ARTICLE",
+        ceneval_badge: "CENEVAL Reference — Cited in Mexico's national EGEL Plus ICOMPU examination guide",
 
         // Education
         education_title: "<ACADEMIA_&_CERTS>",
@@ -156,6 +157,7 @@ const translations = {
         research_btn_paper: "LEER PAPER",
         research_btn_book: "BUSCAR ONLINE",
         research_btn_article: "LEER ARTÍCULO",
+        ceneval_badge: "Referencia CENEVAL — Citado en la guía del examen nacional EGEL Plus ICOMPU de México",
 
         // Education
         education_title: "<ACADEMIA_&_CERTS>",

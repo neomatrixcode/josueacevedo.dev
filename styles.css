@@ -353,6 +353,35 @@ section .container {
     text-shadow: 0 0 8px var(--neon-blue);
 }
 
+/* CENEVAL Badge */
+.research-card.featured {
+    border-color: var(--neon-gold);
+    background: rgba(255, 215, 0, 0.05);
+}
+
+.ceneval-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 165, 0, 0.1));
+    border: 1px solid var(--neon-gold);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    margin: 1rem 0;
+}
+
+.ceneval-badge .badge-icon {
+    font-size: 1.5rem;
+}
+
+.ceneval-badge .badge-text {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--neon-gold);
+    line-height: 1.4;
+    font-weight: 600;
+}
+
 /* Expertise */
 section {
     padding: 5rem 0;
