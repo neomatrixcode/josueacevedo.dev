@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -123,14 +123,16 @@
         <nav class="container">
             <div class="logo">&gt; NV_MATRIX<span class="cursor">_</span></div>
             <ul class="nav-links">
-                <li><a href="#terminal">./terminal</a></li>
-                <li><a href="#experience">./career</a></li>
-                <li><a href="#expertise">./skills</a></li>
-                <li><a href="#projects">./deployments</a></li>
-                <li><a href="#education">./academia</a></li>
-                <li><a href="#transmissions">./logs</a></li>
-                <li><a href="#broadcasts">./channel</a></li>
-                <li><a href="#contact" class="btn-glitch" data-text="EXECUTE_CONTACT">EXECUTE_CONTACT</a></li>
+                <li><a href="#terminal" data-i18n="nav_terminal">./terminal</a></li>
+                <li><a href="#experience" data-i18n="nav_career">./career</a></li>
+                <li><a href="#expertise" data-i18n="nav_skills">./skills</a></li>
+                <li><a href="#projects" data-i18n="nav_deployments">./deployments</a></li>
+                <li><a href="#education" data-i18n="nav_academia">./academia</a></li>
+                <li><a href="#transmissions" data-i18n="nav_logs">./logs</a></li>
+                <li><a href="#broadcasts" data-i18n="nav_channel">./channel</a></li>
+                <li><a href="#contact" class="btn-glitch" data-text="EXECUTE_CONTACT"
+                        data-i18n="nav_contact">EXECUTE_CONTACT</a></li>
+                <li><button id="lang-toggle" class="btn-lang">[ES]</button></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -148,11 +150,12 @@
                         <span class="dot red"></span>
                         <span class="dot yellow"></span>
                         <span class="dot green"></span>
-                        <span class="title">root@neomatrix:~/biography</span>
+                        <span class="title" data-i18n="hero_role">root@neomatrix:~/biography</span>
                     </div>
                     <div class="terminal-body">
                         <p class="prompt"><span class="user">root@neomatrix</span>:<span class="path">~</span>$
-                            ./identify_user.sh</p>
+                            <span data-i18n="hero_command">./identify_user.sh</span>
+                        </p>
                         <div id="typing-output"></div>
                         <p class="static-output hidden">
                             <span class="comment"># SYSTEM ARCHITECT DETECTED</span><br>
@@ -162,8 +165,15 @@
                             &gt; EXP: 15+ Years (Level 99)<br>
                             &gt; STATUS: <span class="success">ONLINE</span><br>
                             <br>
-                            <span class="comment"># MISSION:</span><br>
-                            "Escribiendo el código que corre el mundo. Desde Mainframes hasta Hypervisores en Rust."
+                            <span class="comment" data-i18n="about_title">&lt;WHOAMI&gt;</span><br>
+                            <span data-i18n="about_desc_1" data-i18n-html="true">15+ years designing operating systems,
+                                hypervisors and modernizing legacy infrastructure. Author of <a
+                                    href='https://nabucodonosor.app/book/ENSAMBLADOR_X86' class='highlight-link'
+                                    target='_blank'>'Ensamblador X86'</a>.</span><br><br>
+                            <span data-i18n="about_desc_2" data-i18n-html="true">Specialized in <span
+                                    class='highlight'>Low-Level Programming</span>, <span
+                                    class='highlight'>Cybersecurity</span> and <span class='highlight'>Hardware
+                                    Prototyping</span>. Bridging the gap between silicon and cloud.</span>
                         </p>
                         <div class="cta-terminal hidden">
                             <a href="#projects" class="cmd-link">[View Projects]</a>
@@ -176,14 +186,14 @@
 
         <section id="expertise" class="container">
             <div class="section-title">
-                <h2>&lt;SYSTEM_CAPABILITIES&gt;</h2>
+                <h2 data-i18n="skills_title">&lt;SYSTEM_CAPABILITIES&gt;</h2>
                 <div class="glitch-line"></div>
             </div>
 
             <div class="skills-grid">
                 <div class="skill-card">
                     <i class="fa-solid fa-microchip icon"></i>
-                    <h3>Low Level & Systems</h3>
+                    <h3 data-i18n="skills_low_level">Low Level & Systems</h3>
                     <ul>
                         <li><span class="cmd">></span> Kernel Development (C/C++)</li>
                         <li><span class="cmd">></span> Rust Hypervisor Dev</li>
@@ -194,7 +204,7 @@
                 </div>
                 <div class="skill-card">
                     <i class="fa-solid fa-server icon"></i>
-                    <h3>Legacy & Mainframe</h3>
+                    <h3 data-i18n="skills_legacy">Legacy & Mainframe</h3>
                     <ul>
                         <li><span class="cmd">></span> COBOL / JCL / TSO</li>
                         <li><span class="cmd">></span> IBM Mainframe / DB2</li>
@@ -204,7 +214,7 @@
                 </div>
                 <div class="skill-card">
                     <i class="fa-solid fa-code-branch icon"></i>
-                    <h3>Scientific & AI</h3>
+                    <h3 data-i18n="skills_scientific">Scientific & AI</h3>
                     <ul>
                         <li><span class="cmd">></span> Julia (Diana.jl, Merly.jl)</li>
                         <li><span class="cmd">></span> Python (TensorFlow, dlib)</li>
@@ -214,7 +224,7 @@
                 </div>
                 <div class="skill-card">
                     <i class="fa-solid fa-microchip icon"></i>
-                    <h3>Hardware & Quantum</h3>
+                    <h3 data-i18n="skills_hardware">Hardware & Quantum</h3>
                     <ul>
                         <li><span class="cmd">></span> ASIC Prototyping (Neuronex)</li>
                         <li><span class="cmd">></span> Quantum Hardware & Q#</li>
@@ -227,19 +237,19 @@
 
         <section id="experience" class="container">
             <div class="section-title">
-                <h2>&lt;CAREER_Log&gt;</h2>
+                <h2 data-i18n="career_title">&lt;CAREER_LOG&gt;</h2>
                 <div class="glitch-line"></div>
             </div>
 
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-date">CURRENT</div>
+                    <div class="timeline-date" data-i18n="career_current">CURRENT</div>
                     <div class="timeline-content">
                         <h3>HackCTF</h3>
                         <div class="role">Technical Leader</div>
-                        <p class="timeline-desc">
-                            Diseño de infraestructura crítica y Hypervisor bare-metal en Rust (x86/ARM/RISC-V).
-                            Implementación de HackOS (AlmaLinux hardened). Dashboard de observabilidad en Flutter.
+                        <p class="timeline-desc" data-i18n="career_hackctf_desc">
+                            Critical infrastructure design and bare-metal Hypervisor in Rust (x86/ARM/RISC-V). HackOS
+                            implementation (hardened AlmaLinux). Observability dashboard in Flutter.
                         </p>
                     </div>
                 </div>
@@ -249,8 +259,8 @@
                     <div class="timeline-content">
                         <h3>techreo</h3>
                         <div class="role">Senior C# Developer</div>
-                        <p class="timeline-desc">
-                            Sistemas financieros y Pipeline KYC (Metamap). Modernización de infraestructura Fintech.
+                        <p class="timeline-desc" data-i18n="career_techreo_desc">
+                            Financial systems and KYC Pipeline (Metamap). Fintech infrastructure modernization.
                         </p>
                     </div>
                 </div>
@@ -260,10 +270,9 @@
                     <div class="timeline-content">
                         <h3>IDS Comercial (GNP)</h3>
                         <div class="role">Technical Leader Senior</div>
-                        <p class="timeline-desc">
-                            Arquitectura Mainframe IBM z/OS. Automatización con JCL/REXX. Modernización de COBOL/DB2
-                            hacia Cloud híbrida.
-                            Plataforma de visión computacional (Python/Java).
+                        <p class="timeline-desc" data-i18n="career_ids_desc">
+                            IBM z/OS Mainframe Architecture. Automation with JCL/REXX. COBOL/DB2 modernization to Hybrid
+                            Cloud. Computer Vision platform (Python/Java).
                         </p>
                     </div>
                 </div>
@@ -273,20 +282,20 @@
                     <div class="timeline-content">
                         <h3>INAOE</h3>
                         <div class="role">Senior Software Engineer</div>
-                        <p class="timeline-desc">
-                            Astrofísica Computacional: Procesamiento de curvas de luz.
-                            Deep Learning con CNNs y Transformers para clasificación estelar.
+                        <p class="timeline-desc" data-i18n="career_inaoe_desc">
+                            Computational Astrophysics: Light curve processing. Deep Learning with CNNs and Transformers
+                            for stellar classification.
                         </p>
                     </div>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-date">PREVIOUS</div>
+                    <div class="timeline-date" data-i18n="career_previous">PREVIOUS</div>
                     <div class="timeline-content">
                         <h3>Zebrands / gtec</h3>
                         <div class="role">Senior Backend Engineer</div>
-                        <p class="timeline-desc">
-                            Arquitectura distribuida con NestJS, MongoDB y Kubernetes. Microservicios Java en GCP.
+                        <p class="timeline-desc" data-i18n="career_zebrands_desc">
+                            Distributed architecture with NestJS, MongoDB and Kubernetes. Java Microservices on GCP.
                         </p>
                     </div>
                 </div>
@@ -295,7 +304,7 @@
 
         <section id="projects" class="container">
             <div class="section-title">
-                <h2>&lt;DEPLOYMENTS&gt;</h2>
+                <h2 data-i18n="projects_title">&lt;DEPLOYMENTS&gt;</h2>
                 <div class="glitch-line"></div>
             </div>
 
@@ -305,9 +314,9 @@
                     <div class="project-details">
                         <h3>00_DevScrub_System_Tool</h3>
                         <p class="tech-stack">[Windows Native] [System] [Product]</p>
-                        <p class="description">
-                            Herramienta de mantenimiento para desarrolladores y gamers. Limpieza profunda de Docker,
-                            WSL2 (VHDX compact), NPM y Gradle. Diseño Fluent UI. Comercializado globalmente.
+                        <p class="description" data-i18n="project_devscrub_desc">
+                            Maintenance tool for developers and gamers. Deep cleaning for Docker, WSL2 (VHDX compact),
+                            NPM and Gradle. Fluent UI Design. Global commercialization.
                         </p>
                         <a href="https://devscrub-website.vercel.app/" target="_blank" class="repo-link">launch_site
                             -></a>
@@ -322,9 +331,9 @@
                     <div class="project-details">
                         <h3>01_HackOS_Custom_Distro</h3>
                         <p class="tech-stack">[Linux] [Security] [Mission Critical]</p>
-                        <p class="description">
-                            Sistema Operativo basado en Linux diseñado desde cero para entornos de misión crítica.
-                            Enfocado en estabilidad, control total del entorno y seguridad endurecida.
+                        <p class="description" data-i18n="project_hackos_desc">
+                            Linux-based Operating System designed from scratch for mission-critical environments.
+                            Focused on stability, total environment control and hardened security.
                         </p>
                     </div>
                     <div class="project-state">
@@ -337,10 +346,9 @@
                     <div class="project-details">
                         <h3>02_Rust_Bare_Metal_Hypervisor</h3>
                         <p class="tech-stack">[Rust] [Virtualization] [Security]</p>
-                        <p class="description">
-                            Hypervisor bare-metal centrado en aislamiento a nivel de hardware y seguridad. Soporte
-                            multi-arquitectura (x86_64, aarch64, riscv64). Gestor de VMs con superposición de disco
-                            dinámica.
+                        <p class="description" data-i18n="project_rust_hypervisor_desc">
+                            Bare-metal hypervisor focused on hardware-level isolation and security. Multi-architecture
+                            support (x86_64, aarch64, riscv64). VM manager with dynamic disk overlay.
                         </p>
                     </div>
                     <div class="project-state">
@@ -353,9 +361,9 @@
                     <div class="project-details">
                         <h3>03_NEOOS_KERNEL</h3>
                         <p class="tech-stack">[C++] [Assembly GAS] [Kernel]</p>
-                        <p class="description">
-                            Desarrollo de un kernel propio demostrando dominio absoluto de la gestión de memoria,
-                            interrupciones y control de hardware.
+                        <p class="description" data-i18n="project_neoos_desc">
+                            Development of a custom kernel demonstrating absolute mastery of memory management,
+                            interrupts and hardware control.
                         </p>
                         <a href="https://github.com/neomatrixcode/NEOOS_KERNEL" target="_blank" class="repo-link">git
                             checkout -></a>
@@ -370,9 +378,9 @@
                     <div class="project-details">
                         <h3>04_Julia_Ecosystem</h3>
                         <p class="tech-stack">[Julia] [Open Source]</p>
-                        <p class="description">
-                            Contribuciones significativas al ecosistema Julia. Autor de <strong>Diana.jl</strong>
-                            (GraphQL), <strong>Merly.jl</strong> (Microframework) y <strong>Faker.jl</strong> (Data
+                        <p class="description" data-i18n="project_julia_desc" data-i18n-html="true">
+                            Significant contributions to the Julia ecosystem. Author of <strong>Diana.jl</strong>
+                            (GraphQL), <strong>Merly.jl</strong> (Microframework) and <strong>Faker.jl</strong> (Data
                             Generator).
                         </p>
                     </div>
@@ -386,9 +394,9 @@
                     <div class="project-details">
                         <h3>05_Neuronex_ASIC_Prototype</h3>
                         <p class="tech-stack">[Hardware] [Verilog] [AI Inference]</p>
-                        <p class="description">
-                            Prototipo de módulo ASIC para inferencia de IA. Diseño de interfaz PCIe y SDK propio para
-                            integración con frameworks de ML.
+                        <p class="description" data-i18n="project_neuronex_desc">
+                            ASIC module prototype for AI inference. PCIe interface design and custom SDK for
+                            integration.
                         </p>
                     </div>
                     <div class="project-state">
@@ -401,9 +409,9 @@
                     <div class="project-details">
                         <h3>06_EQGRP_NSA_Leak_Analysis</h3>
                         <p class="tech-stack">[CyberIntelligence] [Malware Analysis] [APT]</p>
-                        <p class="description">
-                            Análisis técnico forense de "Equation Group" (NSA). Documentación de herramientas ofensivas
-                            estatales y vectores de ataque persistentes (APT).
+                        <p class="description" data-i18n="project_eqgrp_desc">
+                            Technical forensic analysis of "Equation Group" (NSA). Documentation of state-sponsored
+                            offensive tools and persistent attack vectors (APT).
                         </p>
                         <a href="https://github.com/neomatrixcode/EQGRP" target="_blank" class="repo-link">git checkout
                             -></a>
@@ -417,7 +425,7 @@
 
         <section id="opensource" class="container">
             <div class="section-title">
-                <h2>&lt;OPEN_SOURCE_CONTRIBS&gt;</h2>
+                <h2 data-i18n="opensource_title">&lt;OPEN_SOURCE_CONTRIBS&gt;</h2>
                 <div class="glitch-line"></div>
             </div>
 
@@ -487,41 +495,41 @@
 
         <section id="impact" class="container">
             <div class="section-title">
-                <h2>&lt;IMPACT_METRICS&gt;</h2>
+                <h2 data-i18n="impact_title">&lt;IMPACT_METRICS&gt;</h2>
                 <div class="glitch-line"></div>
             </div>
             <div class="metrics-grid">
                 <div class="metric-card">
                     <div class="metric-icon">⭐</div>
                     <div class="metric-number">318</div>
-                    <div class="metric-label">GitHub Stars</div>
+                    <div class="metric-label" data-i18n="metric_stars">GitHub Stars</div>
                 </div>
                 <div class="metric-card">
                     <div class="metric-icon">📦</div>
                     <div class="metric-number">404</div>
-                    <div class="metric-label">Total Repositories</div>
+                    <div class="metric-label" data-i18n="metric_repos">Total Repositories</div>
                 </div>
                 <div class="metric-card">
                     <div class="metric-icon">⏳</div>
                     <div class="metric-number">11+</div>
-                    <div class="metric-label">Years Active</div>
+                    <div class="metric-label" data-i18n="metric_years">Years Active</div>
                 </div>
                 <div class="metric-card">
                     <div class="metric-icon">🌍</div>
                     <div class="metric-number">5+</div>
-                    <div class="metric-label">Major Orgs</div>
+                    <div class="metric-label" data-i18n="metric_orgs">Major Orgs</div>
                 </div>
                 <div class="metric-card">
                     <div class="metric-icon">▶️</div>
                     <div class="metric-number">6.2K</div>
-                    <div class="metric-label">YouTube Subs</div>
+                    <div class="metric-label" data-i18n="metric_subs">YouTube Subs</div>
                 </div>
             </div>
         </section>
 
         <section id="education" class="container">
             <div class="section-title">
-                <h2>&lt;ACADEMIA_&_CERTS&gt;</h2>
+                <h2 data-i18n="education_title">&lt;ACADEMIA_&_CERTS&gt;</h2>
                 <div class="glitch-line"></div>
             </div>
 
@@ -632,7 +640,7 @@
 
         <section id="transmissions" class="container">
             <div class="section-title">
-                <h2>&lt;TRANSMISSIONS&gt;</h2>
+                <h2 data-i18n="transmissions_title">&lt;TRANSMISSIONS&gt;</h2>
                 <div class="glitch-line"></div>
             </div>
             <div class="logs-grid">
@@ -668,7 +676,7 @@
 
         <section id="broadcasts" class="container">
             <div class="section-title">
-                <h2>&lt;BROADCASTS&gt;</h2>
+                <h2 data-i18n="broadcasts_title">&lt;BROADCASTS&gt;</h2>
                 <div class="glitch-line"></div>
             </div>
             <div class="video-grid">
@@ -728,9 +736,8 @@
                 <p>> INITIATING SECURE CONNECTION...</p>
                 <p>> ENCRYPTION: AES-256... <span class="success">OK</span></p>
                 <br>
-                <h2>READY TO COLLABORATE?</h2>
-                <p>Si tu proyecto requiere arquitectura de precisión, seguridad ofensiva/defensiva o modernización
-                    imposible.</p>
+                <h2 data-i18n="contact_title">&lt;ESTABLISH_UPLINK&gt;</h2>
+                <p data-i18n="contact_desc">Encrypted channel open. Ready for new missions.</p>
                 <br>
                 <div class="credentials-grid">
                     <a href="https://arxiv.org/search/cs?searchtype=author&query=Maldonado%2C+J+A" target="_blank"
@@ -796,6 +803,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="i18n.js"></script>
 </body>
 
 </html>

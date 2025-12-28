@@ -148,6 +148,25 @@ section .container {
     overflow: hidden;
 }
 
+.btn-lang {
+    background: transparent;
+    border: 1px solid var(--text-dim);
+    color: var(--text-dim);
+    padding: 5px 10px;
+    font-family: 'Space Mono', monospace;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.85rem;
+    margin-left: 10px;
+}
+
+.btn-lang:hover {
+    border-color: var(--neon-blue);
+    color: var(--neon-blue);
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.2);
+    text-shadow: 0 0 5px var(--neon-blue);
+}
+
 .btn-glitch:hover {
     background: var(--neon-green) !important;
     color: #000 !important;
