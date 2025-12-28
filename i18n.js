@@ -58,6 +58,18 @@ const translations = {
         metric_orgs: "Major Orgs",
         metric_subs: "YouTube Subs",
 
+        // Research
+        research_title: "<RESEARCH_&_PUBLICATIONS>",
+        research_paper_type: "ACADEMIC PAPER",
+        research_book_type: "BOOK",
+        research_article_type: "ARTICLE",
+        research_paper_desc: "A micro web framework written in Julia to create web applications and microservices. Focuses on high performance and ease of use.",
+        research_book_desc: "Comprehensive guide to low-level optimization and system architecture using X86 Assembly.",
+        research_article_desc: "Deep dive into Julia's type system and performance characteristics compared to C/Fortran.",
+        research_btn_paper: "READ PAPER",
+        research_btn_book: "FIND ONLINE",
+        research_btn_article: "READ ARTICLE",
+
         // Education
         education_title: "<ACADEMIA_&_CERTS>",
 
@@ -132,6 +144,18 @@ const translations = {
         metric_years: "Años Activo",
         metric_orgs: "Orgs Principales",
         metric_subs: "Subs YouTube",
+
+        // Research
+        research_title: "<INVESTIGACION_&_PUBLICACIONES>",
+        research_paper_type: "PAPER ACADÉMICO",
+        research_book_type: "LIBRO",
+        research_article_type: "ARTÍCULO",
+        research_paper_desc: "Micro framework web escrito en Julia para crear aplicaciones y microservicios. Enfocado en alto rendimiento y facilidad de uso.",
+        research_book_desc: "Guía integral de optimización de bajo nivel y arquitectura de sistemas usando Ensamblador X86.",
+        research_article_desc: "Análisis profundo del sistema de tipos de Julia y características de rendimiento comparado con C/Fortran.",
+        research_btn_paper: "LEER PAPER",
+        research_btn_book: "BUSCAR ONLINE",
+        research_btn_article: "LEER ARTÍCULO",
 
         // Education
         education_title: "<ACADEMIA_&_CERTS>",
