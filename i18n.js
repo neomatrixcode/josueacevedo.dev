@@ -72,8 +72,16 @@ const translations = {
         research_btn_paper: "READ PAPER",
         research_btn_book: "FIND ONLINE",
         research_btn_conf: "VIEW EVENT",
+        research_btn_book: "FIND ONLINE",
+        research_btn_conf: "VIEW EVENT",
         research_btn_article: "READ ARTICLE",
         ceneval_badge: "CENEVAL Reference — Cited in Mexico's national EGEL Plus ICOMPU examination guide",
+
+        // New Papers
+        research_paper2020_title: "Algorithm Analysis for Pattern Recognition in High-Level Languages",
+        research_paper2020_desc: "Comparative analysis of computer vision algorithms for predefined image recognition. Published in Academia Journals (Hidalgo 2020).",
+        research_paper2017_title: "Human Detection Algorithms: Python vs C",
+        research_paper2017_desc: "Performance evaluation of human detection patterns. Published in ECORFAN Journal of Applied Computing & presented at CIER 2017.",
 
         // Education
         education_title: "<ACADEMIA_&_CERTS>",
@@ -165,7 +173,16 @@ const translations = {
         research_btn_book: "OBTENER LIBRO",
         research_btn_conf: "VER EVENTO",
         research_btn_article: "LEER ARTÍCULO",
+        research_btn_book: "OBTENER LIBRO",
+        research_btn_conf: "VER EVENTO",
+        research_btn_article: "LEER ARTÍCULO",
         ceneval_badge: "Referencia CENEVAL — Citado en la guía del examen nacional EGEL Plus ICOMPU de México",
+
+        // New Papers
+        research_paper2020_title: "Análisis de Algoritmos para Reconocimiento de Patrones",
+        research_paper2020_desc: "Análisis comparativo de algoritmos de visión artificial para reconocimiento de imágenes predefinidas. Publicado en Academia Journals (Hidalgo 2020).",
+        research_paper2017_title: "Detección Humana: Python vs C",
+        research_paper2017_desc: "Evaluación de rendimiento de patrones de detección humana. Publicado en Revista de Cómputo Aplicado (ECORFAN) y presentado en CIER 2017.",
 
         // Education
         education_title: "<ACADEMIA_&_CERTS>",
