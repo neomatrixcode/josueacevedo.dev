@@ -1150,3 +1150,87 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Impact Metrics */
+:root {
+    --neon-gold: #ffd700;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+
+.metric-card {
+    background: rgba(10, 10, 15, 0.8);
+    border: 1px solid var(--neon-dim);
+    padding: 2rem 1rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.metric-card:hover {
+    border-color: var(--neon-gold);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.1);
+}
+
+.metric-card .metric-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--neon-blue);
+    /* Fallback or use defined var */
+    text-shadow: 0 0 10px rgba(0, 243, 255, 0.3);
+}
+
+/* Specific colors per icon */
+.metric-card:nth-child(1) .metric-icon {
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+}
+
+/* Stars - Gold */
+.metric-card:nth-child(2) .metric-icon {
+    color: #00f3ff;
+    text-shadow: 0 0 10px rgba(0, 243, 255, 0.4);
+}
+
+/* Repos - Cyan */
+.metric-card:nth-child(3) .metric-icon {
+    color: #ff00ff;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.4);
+}
+
+/* Years - Purple */
+.metric-card:nth-child(4) .metric-icon {
+    color: #00ff41;
+    text-shadow: 0 0 10px rgba(0, 255, 65, 0.4);
+}
+
+/* Orgs - Green */
+
+.metric-number {
+    font-family: 'Space Mono', monospace;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.metric-label {
+    font-family: 'Space Mono', monospace;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+@media (max-width: 768px) {
+    .metrics-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
