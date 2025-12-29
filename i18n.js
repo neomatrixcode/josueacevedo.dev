@@ -85,6 +85,8 @@ const translations = {
 
         // Education
         education_title: "<ACADEMIA_&_CERTS>",
+        edu_reniecyt_badge: "CONACYT Research Registry",
+        edu_reniecyt_desc: "Officially registered in Mexico's National Registry of Scientific and Technological Institutions (RENIECYT) since 2019.",
 
         // Logs/Transmissions
         transmissions_title: "<TRANSMISSIONS>",
@@ -186,6 +188,8 @@ const translations = {
 
         // Education
         education_title: "<ACADEMIA_&_CERTS>",
+        edu_reniecyt_badge: "Registro Nacional CONACYT",
+        edu_reniecyt_desc: "Oficialmente inscrito en el Registro Nacional de Instituciones y Empresas Científicas y Tecnológicas (RENIECYT) desde 2019.",
 
         // Logs/Transmissions
         transmissions_title: "<TRANSMISIONES>",
